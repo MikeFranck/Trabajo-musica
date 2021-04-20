@@ -35,6 +35,8 @@
       height: 100%;
   }
   .button2{ 
+    display: block;
+    width: 100%;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -44,4 +46,9 @@
 .fotos{
     width: auto;
     height: auto;
+}
+.orden{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
