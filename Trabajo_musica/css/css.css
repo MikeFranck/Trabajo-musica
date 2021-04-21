@@ -69,3 +69,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-decoration: none;
     color: white;
 }
+
+.generos{
+    font-size: xx-large;
+}
+
+.album-detalle{
+    width: 400px; ;
+}
