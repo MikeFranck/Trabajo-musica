@@ -77,3 +77,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 .album-detalle{
     width: 400px; ;
 }
+
+.coincidencias{
+    text-align: center;
+}
