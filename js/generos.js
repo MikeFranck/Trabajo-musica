@@ -1,3 +1,20 @@
+let busqueda = document.getElementById("busqueda");
+let busquedamusica = document.querySelector(".busquedamusica");
+
+busqueda.addEventListener("submit", function(e){
+  e.preventDefault()
+  if (busquedamusica.value.length < 3 || busquedamusica.value == ""){ // si la busqueda tiene menos de 3 caracteres o esta vacia
+    alert ("El largo de la busqueda debe ser mayor a 2 caracteres"); //avisar al usuario
+	
+      }
+
+
+   else {    // si la busqueda es mayor o igual a 3 caracteres
+	   this.submit()    // hacer la busqueda
+      }
+  
+})
+
 //pide la info a la api
 fetch('https://cors-anywhere.herokuapp.com/http://api.deezer.com/genre')
 .then(res => res.json())

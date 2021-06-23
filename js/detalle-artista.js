@@ -1,5 +1,22 @@
 window.addEventListener('load', function(){
 
+    let busqueda = document.getElementById("busqueda");
+    let busquedamusica = document.querySelector(".busquedamusica");
+    
+    busqueda.addEventListener("submit", function(e){
+      e.preventDefault()
+      if (busquedamusica.value.length < 3 || busquedamusica.value == ""){ // si la busqueda tiene menos de 3 caracteres o esta vacia
+        alert ("El largo de la busqueda debe ser mayor a 2 caracteres"); //avisar al usuario
+        
+          }
+    
+    
+       else {    // si la busqueda es mayor o igual a 3 caracteres
+           this.submit()    // hacer la busqueda
+          }
+      
+    })
+
     const proxy = 'https://cors-anywhere.herokuapp.com/';
 
     let queryString = location.search
@@ -20,10 +37,6 @@ window.addEventListener('load', function(){
             <h1>${datos.name}</h1>
             <h2>${datos.type}</h2>
             <h2>Fans: <a class="lit" href="">${datos.nb_fan}</a></h2>
-            <h3>La canción mas escuchada de Bad Bunny:</h3>
-            <div class="undia"><a class="lit" href="detalle-canciones.html"><img src="img/undia.jpeg" alt=""><h2 class="lit">Un día</h2></a></div>
-            <h3>El single es una colaboración entre Bad y múltiples artistas famosos, tanto latinos como estadounidenses.</h3>
-            
         </div>
         <div>
             <h3>5 albums de ${datos.name} mas escuchadas de Rythm:</h3>

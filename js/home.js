@@ -5,7 +5,7 @@ let busquedamusica = document.querySelector(".busquedamusica");
 
 busqueda.addEventListener("submit", function(e){
   e.preventDefault()
-  if (busquedamusica.value.length < 3 || busquedamusica.value === ""){ // si la busqueda tiene menos de 3 caracteres o esta vacia
+  if (busquedamusica.value.length < 3 || busquedamusica.value == ""){ // si la busqueda tiene menos de 3 caracteres o esta vacia
     alert ("El largo de la busqueda debe ser mayor a 2 caracteres"); //avisar al usuario
 	
       }
@@ -17,7 +17,7 @@ busqueda.addEventListener("submit", function(e){
   
 })
 
-//termina header y empieza home
+//termina header 
 
 	const proxy = 'https://cors-anywhere.herokuapp.com/';
 	let api = `${proxy}https://api.deezer.com/playlist/9201043042`; //playlist con todas la canciones que aparecen en el home
@@ -70,32 +70,32 @@ busqueda.addEventListener("submit", function(e){
 			let album5 = document.querySelector('.album5');
 
 			album1.innerHTML += `
-			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-album.html"><h3>${datos.tracks.data[0].album.title}</h3></a>
+			<a href="detalle-album.html?id=${datos.tracks.data[0].album.id}"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[0].album.id}"><h3>${datos.tracks.data[0].album.title}</h3></a>
 			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[0].artist.id}"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
 			`;
 
 			album2.innerHTML += `
-			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[1].album.title}</h2></a>
+			<a href="detalle-album.html?id=${datos.tracks.data[1].album.id}"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[1].album.id}"><h2>${datos.tracks.data[1].album.title}</h2></a>
 			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[1].artist.id}"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
 			`;
 
 			album3.innerHTML += `
-			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[2].album.title}</h2></a>
+			<a href="detalle-album.html?id=${datos.tracks.data[2].album.id}"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[2].album.id}"><h2>${datos.tracks.data[2].album.title}</h2></a>
 			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[2].artist.id}"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
 			`;
 
 			album4.innerHTML += `
-			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[3].album.title}</h2></a>
+			<a href="detalle-album.html?id=${datos.tracks.data[3].album.id}"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[3].album.id}"><h2>${datos.tracks.data[3].album.title}</h2></a>
 			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[3].artist.id}"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
 			`;
 
 			album5.innerHTML += `
-			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[4].album.title}</h2></a>
+			<a href="detalle-album.html?id=${datos.tracks.data[4].album.id}"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[4].album.id}"><h2>${datos.tracks.data[4].album.title}</h2></a>
 			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[4].artist.id}"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
 			`;
 
