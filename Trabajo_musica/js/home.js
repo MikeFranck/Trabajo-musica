@@ -37,29 +37,29 @@ busqueda.addEventListener("submit", function(e){
 			 let cancion5 = document.querySelector('.cancion5');
 
 			cancion1.innerHTML += `
-			<a href="detalle-canciones.html"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-canciones.html"><h2>${datos.tracks.data[0].title}</h2></a>
+			<a href="detalle-canciones.html?id=${datos.tracks.data[0].id}"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[0].id}"><h2>${datos.tracks.data[0].title}</h2></a>
 			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
 			`;
 			cancion2.innerHTML += `
-			<a href="detalle-canciones.html"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-canciones.html"><h2>${datos.tracks.data[1].title}</h2></a>
+			<a href="detalle-canciones.html?id=${datos.tracks.data[1].id}"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[1].id}"><h2>${datos.tracks.data[1].title}</h2></a>
 			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
 			`;
 			cancion3.innerHTML += `
-			<a href="detalle-canciones.html"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-canciones.html"><h2>${datos.tracks.data[2].title}</h2></a>
+			<a href="detalle-canciones.html?id=${datos.tracks.data[2].id}"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[2].id}"><h2>${datos.tracks.data[2].title}</h2></a>
 			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
 			`;
 			cancion4.innerHTML += `
-			<a href="detalle-canciones.html"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-canciones.html"><h2>${datos.tracks.data[3].title}</h2></a>
+			<a href="detalle-canciones.html?id=${datos.tracks.data[3].id}"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[3].id}"><h2>${datos.tracks.data[3].title}</h2></a>
 			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
 			`;
 
 			cancion5.innerHTML += `
-			<a href="detalle-canciones.html"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
-			<div class="texto"></a><a class="lit"href="detalle-canciones.html"><h2>${datos.tracks.data[4].title}</h2></a>
+			<a href="detalle-canciones.html?id=${datos.tracks.data[4].id}"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
+			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[4].id}"><h2>${datos.tracks.data[4].title}</h2></a>
 			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
 			`;
 
@@ -72,31 +72,31 @@ busqueda.addEventListener("submit", function(e){
 			album1.innerHTML += `
 			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-album.html"><h3>${datos.tracks.data[0].album.title}</h3></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[0].artist.id}"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
 			`;
 
 			album2.innerHTML += `
 			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[1].album.title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[1].artist.id}"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
 			`;
 
 			album3.innerHTML += `
 			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[2].album.title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[2].artist.id}"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
 			`;
 
 			album4.innerHTML += `
 			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[3].album.title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[3].artist.id}"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
 			`;
 
 			album5.innerHTML += `
 			<a href="detalle-album.html"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-album.html"><h2>${datos.tracks.data[4].album.title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[4].artist.id}"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
 			`;
 
 		})
@@ -118,8 +118,8 @@ busqueda.addEventListener("submit", function(e){
 				.then(function (datos) {
 					let cantante1 = document.querySelector('.cantante1');
 					cantante1.innerHTML += `
-					<a href="detalle-artistas.html"><img class="ayuda" src="${datos.picture_xl}" alt="">
-					</a><div class="texto"><a class="lit" href="detalle-artistas.html"><h2>${datos.name}</h2></a></div>
+					<a href="detalle-artistas.html?id=${datos.id}"><img class="ayuda" src="${datos.picture_xl}" alt="">
+					</a><div class="texto"><a class="lit" href="detalle-artistas.html?id=${datos.id}"><h2>${datos.name}</h2></a></div>
 					`;
 		
 				})
@@ -135,8 +135,8 @@ busqueda.addEventListener("submit", function(e){
 				.then(function (datos) {
 					let cantante2 = document.querySelector('.cantante2');
 					cantante2.innerHTML += `
-					<a href="detalle-artistas.html"><img class="ayuda" src="${datos.picture_xl}" alt="">
-					</a><div class="texto"><a class="lit" href="detalle-artistas.html"><h2>${datos.name}</h2></a></div>
+					<a href="detalle-artistas.html?id=${datos.id}"><img class="ayuda" src="${datos.picture_xl}" alt="">
+					</a><div class="texto"><a class="lit" href="detalle-artistas.html?id=${datos.id}"><h2>${datos.name}</h2></a></div>
 					`;
 		
 				})
@@ -152,8 +152,8 @@ busqueda.addEventListener("submit", function(e){
 				.then(function (datos) {
 					let cantante3 = document.querySelector('.cantante3');
 					cantante3.innerHTML += `
-					<a href="detalle-artistas.html"><img class="ayuda" src="${datos.picture_xl}" alt="">
-					</a><div class="texto"><a class="lit" href="detalle-artistas.html"><h2>${datos.name}</h2></a></div>
+					<a href="detalle-artistas.html?id=${datos.id}"><img class="ayuda" src="${datos.picture_xl}" alt="">
+					</a><div class="texto"><a class="lit" href="detalle-artistas.html?id=${datos.id}"><h2>${datos.name}</h2></a></div>
 					`;
 		
 				})
@@ -169,8 +169,8 @@ busqueda.addEventListener("submit", function(e){
 				.then(function (datos) {
 					let cantante4 = document.querySelector('.cantante4');
 					cantante4.innerHTML += `
-					<a href="detalle-artistas.html"><img class="ayuda" src="${datos.picture_xl}" alt="">
-					</a><div class="texto"><a class="lit" href="detalle-artistas.html"><h2>${datos.name}</h2></a></div>
+					<a href="detalle-artistas.html?id=${datos.id}"><img class="ayuda" src="${datos.picture_xl}" alt="">
+					</a><div class="texto"><a class="lit" href="detalle-artistas.html?id=${datos.id}"><h2>${datos.name}</h2></a></div>
 					`;
 		
 				})
@@ -186,8 +186,8 @@ busqueda.addEventListener("submit", function(e){
 				.then(function (datos) {
 					let cantante5 = document.querySelector('.cantante5');
 					cantante5.innerHTML += `
-					<a href="detalle-artistas.html"><img class="ayuda" src="${datos.picture_xl}" alt="">
-					</a><div class="texto"><a class="lit" href="detalle-artistas.html"><h2>${datos.name}</h2></a></div>
+					<a href="detalle-artistas.html?id=${datos.id}"><img class="ayuda" src="${datos.picture_xl}" alt="">
+					</a><div class="texto"><a class="lit" href="detalle-artistas.html?id=${datos.id}"><h2>${datos.name}</h2></a></div>
 					`;
 		
 				})
