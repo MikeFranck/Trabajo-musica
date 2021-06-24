@@ -1,6 +1,8 @@
 
 window.addEventListener('load', function(){
 
+//header
+
 let busqueda = document.getElementById("busqueda");
 let busquedamusica = document.querySelector(".busquedamusica");
 
@@ -17,6 +19,8 @@ busqueda.addEventListener("submit", function(e){
       }
   
 })
+
+// termina header
 
     const proxy = 'https://cors-anywhere.herokuapp.com/';
     
@@ -79,4 +83,4 @@ busqueda.addEventListener("submit", function(e){
         console.log('Tu error es: ' + error);
     })
     
-    })
+})

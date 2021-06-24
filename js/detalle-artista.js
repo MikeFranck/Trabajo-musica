@@ -1,5 +1,7 @@
 window.addEventListener('load', function(){
 
+    //header
+
     let busqueda = document.getElementById("busqueda");
     let busquedamusica = document.querySelector(".busquedamusica");
     
@@ -17,6 +19,8 @@ window.addEventListener('load', function(){
       
     })
 
+    //termina header
+
     const proxy = 'https://cors-anywhere.herokuapp.com/';
 
     let queryString = location.search
@@ -24,6 +28,8 @@ window.addEventListener('load', function(){
     let idArtist = objetoQuery.get('id')
     
     let paloma = document.querySelector('.paloma')
+
+    //fetch que muestra los datos del artista
     
     fetch(proxy+'https://api.deezer.com/artist/'+idArtist)
     .then(function (response) {
@@ -40,11 +46,12 @@ window.addEventListener('load', function(){
         </div>
         <div>
             <h3>5 albums de ${datos.name} mas escuchadas de Rythm:</h3>
-            <div class="orden">
-               
-                
+            <div class="orden">        
             </div>
         </div>`
+
+        //fetch que muestra los 5 almbums que estan al costado
+
         let orden = document.querySelector (".orden")
 
         fetch(proxy+'https://api.deezer.com/artist/'+idArtist+'/albums')

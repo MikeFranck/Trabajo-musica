@@ -17,11 +17,16 @@ window.addEventListener('load', function(){
       
     })
 
+    // termina header
+
     const proxy = 'https://cors-anywhere.herokuapp.com/';
 
     let queryString = location.search
     let objetoQuery = new URLSearchParams(queryString)
     let Search = objetoQuery.get('busquedamusica')
+
+    //buscador
+    //loader hace referencia al circulito 
     
     let canciones = document.querySelector('.canciones')
     
@@ -36,6 +41,8 @@ window.addEventListener('load', function(){
         loader.style.display = 'none'
         for (let i = 0; i < 5; i++) {
             const track = datos.data[i];
+
+            //este inner html muestra una lista - resultado de 5 elementos 
 
             canciones.innerHTML+=`
             <div class="cancion${i+1}">
