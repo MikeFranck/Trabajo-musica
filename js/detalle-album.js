@@ -41,7 +41,7 @@ busqueda.addEventListener("submit", function(e){
     <img class="camion" src=${datos.cover_xl} alt="">
     <div>
         <h1>${datos.title}</h1>
-        <a class="lit" href="detalle-artistas.html"><h2>${datos.artist.name}</h2></a>
+        <a class="lit" href="detalle-artistas.html?id=${datos.artist.id}"><h2>${datos.artist.name}</h2></a>
         <a class="lit" href="detalle-generos.html"><h2>Género: ${datos.genres.data.name}</h2></a>
         <h3>Fecha de estreno: ${datos.release_date}</h3>
         

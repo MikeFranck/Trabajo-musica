@@ -39,28 +39,28 @@ busqueda.addEventListener("submit", function(e){
 			cancion1.innerHTML += `
 			<a href="detalle-canciones.html?id=${datos.tracks.data[0].id}"><img class="ayuda" src="${datos.tracks.data[0].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[0].id}"><h2>${datos.tracks.data[0].title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[0].artist.id}"><h4>${datos.tracks.data[0].artist.name}</h4></a></div>
 			`;
 			cancion2.innerHTML += `
 			<a href="detalle-canciones.html?id=${datos.tracks.data[1].id}"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[1].id}"><h2>${datos.tracks.data[1].title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[1].artist.id}"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
 			`;
 			cancion3.innerHTML += `
 			<a href="detalle-canciones.html?id=${datos.tracks.data[2].id}"><img class="ayuda" src="${datos.tracks.data[2].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[2].id}"><h2>${datos.tracks.data[2].title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[2].artist.id}"><h4>${datos.tracks.data[2].artist.name}</h4></a></div>
 			`;
 			cancion4.innerHTML += `
 			<a href="detalle-canciones.html?id=${datos.tracks.data[3].id}"><img class="ayuda" src="${datos.tracks.data[3].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[3].id}"><h2>${datos.tracks.data[3].title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[3].artist.id}"><h4>${datos.tracks.data[3].artist.name}</h4></a></div>
 			`;
 
 			cancion5.innerHTML += `
 			<a href="detalle-canciones.html?id=${datos.tracks.data[4].id}"><img class="ayuda" src="${datos.tracks.data[4].album.cover_xl}" alt="">
 			<div class="texto"></a><a class="lit"href="detalle-canciones.html?id=${datos.tracks.data[4].id}"><h2>${datos.tracks.data[4].title}</h2></a>
-			<a class="lit"href="detalle-artistas.html"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
+			<a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[4].artist.id}"><h4>${datos.tracks.data[4].artist.name}</h4></a></div>
 			`;
 
 			let album1 = document.querySelector('.album1');
