@@ -38,7 +38,7 @@ busqueda.addEventListener("submit", function(e){
         console.log(datos);
         
     paloma.innerHTML+= `
-    <img class="pajaro img" src=${datos.cover_xl} alt="">
+    <img class="camion" src=${datos.cover_xl} alt="">
     <div>
         <h1>${datos.title}</h1>
         <a class="lit" href="detalle-artistas.html"><h2>${datos.artist.name}</h2></a>

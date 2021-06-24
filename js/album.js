@@ -71,35 +71,6 @@ window.addEventListener('load', function(){
                 <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[9].artist.id}"><h4>${datos.tracks.data[9].artist.name}</h4></a></div>
                 `;
 
-                album6.innerHTML += `
-                <a href="detalle-album.html?id=${datos.tracks.data[16].album.id}"><img class="ayuda" src="${datos.tracks.data[16].album.cover_xl}" alt="">
-                <div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[16].album.id}"><h2>${datos.tracks.data[16].album.title}</h2></a>
-                <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[16].artist.id}"><h4>${datos.tracks.data[16].artist.name}</h4></a></div>
-                `;
-    
-                album7.innerHTML += `
-                <a href="detalle-album.html?id=${datos.tracks.data[1].album.id}"><img class="ayuda" src="${datos.tracks.data[1].album.cover_xl}" alt="">
-                <div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[1].album.id}"><h2>${datos.tracks.data[1].album.title}</h2></a>
-                <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[1].artist.id}"><h4>${datos.tracks.data[1].artist.name}</h4></a></div>
-                `;
-    
-                album8.innerHTML += `
-                <a href="detalle-album.html?id=${datos.tracks.data[6].album.id}"><img class="ayuda" src="${datos.tracks.data[6].album.cover_xl}" alt="">
-                <div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[6].album.id}"><h2>${datos.tracks.data[6].album.title}</h2></a>
-                <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[6].artist.id}"><h4>${datos.tracks.data[6].artist.name}</h4></a></div>
-                `;
-    
-                album9.innerHTML += `
-                <a href="detalle-album.html?id=${datos.tracks.data[13].album.id}"><img class="ayuda" src="${datos.tracks.data[13].album.cover_xl}" alt="">
-                <div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[13].album.id}"><h2>${datos.tracks.data[13].album.title}</h2></a>
-                <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[13].artist.id}"><h4>${datos.tracks.data[13].artist.name}</h4></a></div>
-                `;
-    
-                album10.innerHTML += `
-                <a href="detalle-album.html?id=${datos.tracks.data[9].album.id}"><img class="ayuda" src="${datos.tracks.data[9].album.cover_xl}" alt="">
-                <div class="texto"></a><a class="lit"href="detalle-album.html?id=${datos.tracks.data[9].album.id}"><h2>${datos.tracks.data[9].album.title}</h2></a>
-                <a class="lit"href="detalle-artistas.html?id=${datos.tracks.data[9].artist.id}"><h4>${datos.tracks.data[9].artist.name}</h4></a></div>
-                `;
     
             })
             .catch(function (error) {
