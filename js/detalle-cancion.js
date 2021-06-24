@@ -1,5 +1,7 @@
 window.addEventListener('load', function(){
 
+    //header
+
 let busqueda = document.getElementById("busqueda");
 let busquedamusica = document.querySelector(".busquedamusica");
 
@@ -17,6 +19,8 @@ busqueda.addEventListener("submit", function(e){
   
 })
 
+//termina header
+
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 
 let queryString = location.search
@@ -24,6 +28,8 @@ let objetoQuery = new URLSearchParams(queryString)
 let idTrack = objetoQuery.get('id')
 
 let paloma = document.querySelector('.paloma')
+
+//fetch que trae las canciones desde la api
 
 fetch(proxy+'https://api.deezer.com/track/'+idTrack)
 .then(function (response) {
@@ -42,15 +48,6 @@ paloma.innerHTML+= `<img class="camion" src="${datos.album.cover_big}" alt="">
     <br><br><br><br><br><br><br>
     <button class="button2" type="button" onclick="alert('Agregado a Mi Música')">Agregar a Mi Música</button>
     
-</div>
-<div>
-    <h3>Canciones que te pueden interesar:</h3>
-    <div class="orden">
-        <div><a class="lit" href="detalle-canciones.html"><img class="ayuda" src="img/lilnax.jpeg" alt=""><h3 class="lit">Old Time Road</h3></a></div>
-        <div><a class="lit" href="detalle-canciones.html"><img class="ayuda" src="img/pink.jpeg" alt=""><h3 class="lit">Money</h3></a></div>
-        <div><a class="lit" href="detalle-canciones.html"><img class="ayuda" src="img/ed.jpeg" alt=""><h3 class="lit">Perfect</h3></a></div>
-        <div><a class="lit" href="detalle-canciones.html"><img class="ayuda" src="img/harry.jpeg" alt=""><h3 class="lit">Watermelon Sugar</h3></a></div>
-    </div>
 </div>`
 
 

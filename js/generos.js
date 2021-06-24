@@ -15,6 +15,8 @@ busqueda.addEventListener("submit", function(e){
   
 })
 
+//termina header
+
 //pide la info a la api
 fetch('https://cors-anywhere.herokuapp.com/http://api.deezer.com/genre')
 .then(res => res.json())

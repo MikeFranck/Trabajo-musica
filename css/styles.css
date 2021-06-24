@@ -149,6 +149,8 @@ body {
    
 }
 
+/*redondito que indica cargando */
+
 .loader {
     border: 16px solid white; /* Light grey */
     border-top: 16px solid black; /* Blue */
