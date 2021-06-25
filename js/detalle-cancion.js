@@ -46,7 +46,7 @@ paloma.innerHTML+= `<img class="camion" src="${datos.album.cover_big}" alt="">
     <a class="lit" href="detalle-artistas.html?id=${datos.artist.id}"><h2>${datos.artist.name}</h2></a>
     <a class="lit" href=""><h2>${datos.album.title}</h2></a>
     <br><br>
-    <div class="centro"><button class="button button1"><ion-icon name="play-circle-outline"></ion-icon></button></div>
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idTrack}" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br><br><br><br><br><br><br>
     <button onclick="addToFavorites(${datos.id})" type="button">Agregar a Mi Lista!</button>
     
@@ -81,6 +81,6 @@ function addToFavorites(x){
     }
     
     
-    
+  
     
     
